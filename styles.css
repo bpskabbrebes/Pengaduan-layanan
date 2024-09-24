@@ -75,16 +75,20 @@ input, select, textarea {
 }
 
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: var(--primary-color);
-    color: var(--button-text-color);
+    background-color: #007BFF;
+    color: white;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    width: 100%;  /* Buat tombol mengambil seluruh lebar */
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
 }
+
+button:hover {
+    background-color: #0056b3;
+}
+
 
 button:hover {
     background-color: var(--hover-color);

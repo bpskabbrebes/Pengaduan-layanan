@@ -45,10 +45,10 @@ h2 {
 }
 
 p {
-    text-align: left;
+    text-align: center;
     font-size: 10px;
     color: #666;
-    margin-bottom: 550px;
+    margin-bottom: 50px;
 }
 
 label {

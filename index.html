@@ -1,39 +1,36 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Pengaduan Layanan</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="form-container">
-        <h2>Form Pengaduan Layanan BPS Kabupaten Brebes</h2>
-        <p>Anda tidak perlu khawatir, kami akan melindungi data diri Anda sesuai peraturan yang berlaku</p>
+    <h2>Form Pengaduan Layanan BPS Kabupaten Brebes</h2>
+    <p>Anda tidak perlu khawatir, kami akan melindungi data diri Anda sesuai peraturan yang berlaku</p>
 
-        <form id="pengaduanForm">
-            <label for="nama">Nama:</label>
-            <input type="text" id="nama" name="nama" placeholder="Nama" required>
+    <form id="pengaduanForm">
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Email" required>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
 
-            <label for="nomorhp">Nomor HP:</label>
-            <input type="tel" id="nomorhp" name="nomorhp" placeholder="Nomor HP" required>
+        <label for="nomorhp">Nomor HP:</label><br>
+        <input type="text" id="nomorhp" name="nomorhp" required><br><br>
 
-            <label for="jenis_pengaduan">Jenis Pengaduan:</label>
-            <select id="jenis_pengaduan" name="jenis_pengaduan" required>
-                <option value="Layanan PST">Layanan PST</option>
-                <option value="Layanan Lain">Layanan Lain</option>
-            </select>
+        <label for="jenis_pengaduan">Jenis Pengaduan:</label><br>
+        <select id="jenis_pengaduan" name="jenis_pengaduan" required>
+            <option value="Layanan PST">Layanan PST</option>
+            <option value="Layanan Lain">Layanan Lain</option>
+        </select><br><br>
 
-            <label for="isi_pengaduan">Isi Pengaduan:</label>
-            <textarea id="isi_pengaduan" name="isi_pengaduan" rows="5" placeholder="Isi Pengaduan" required></textarea>
+        <label for="isi_pengaduan">Isi Pengaduan:</label><br>
+        <textarea id="isi_pengaduan" name="isi_pengaduan" rows="4" cols="50" required></textarea><br><br>
 
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-    
+        <button type="submit">Submit</button>
+    </form>
+
     <script src="script.js"></script>
 </body>
 </html>

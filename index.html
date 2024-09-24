@@ -33,37 +33,6 @@
     </form>
 
     <script src="script.js"></script>
-    // Akses form menggunakan ID
-document.getElementById("pengaduanForm").addEventListener("submit", function(e) {
-    e.preventDefault(); // Mencegah pengiriman form default
-
-    // Ambil nilai dari input field
-    var nama = document.getElementById("nama").value;
-    var email = document.getElementById("email").value;
-    var nomorHP = document.getElementById("nomor_hp").value;
-
-    // Pesan error jika ada field yang kosong
-    var errorMessage = "";
-
-    if (nama === "") {
-        errorMessage += "Nama harus diisi. ";
-    }
-    if (email === "") {
-        errorMessage += "Email harus diisi. ";
-    }
-    if (nomorHP === "") {
-        errorMessage += "Nomor HP harus diisi. ";
-    }
-
-    // Tampilkan pesan error jika ada
-    if (errorMessage !== "") {
-        document.getElementById("error-message").textContent = errorMessage;
-    } else {
-        // Jika semua field sudah diisi, submit form (atau lakukan aksi lain)
-        alert("Form berhasil dikirim!");
-        // document.getElementById("pengaduanForm").submit(); // Kirim form
-    }
-});
    
 </body>
 </html>

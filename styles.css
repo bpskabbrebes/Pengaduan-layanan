@@ -23,54 +23,45 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Pusatkan secara horizontal */
-    align-items: center;    /* Pusatkan secara vertikal */
-    height: 100vh;          /* Tinggi viewport */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-
 
 .form-container {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    width: 100%;   /* Ubah width */
-    max-width: 500px;  /* Pastikan form tidak terlalu lebar */
+    width: 100%;
+    max-width: 500px;  /* Batasi lebar maksimum */
 }
 
 h2 {
     text-align: center;
     font-size: 24px;
     color: #333;
-    margin-bottom: 10px; /* Kurangi margin bawah */
+    margin-bottom: 10px;
 }
 
 p {
     text-align: center;
     font-size: 14px;
     color: #666;
-    margin-bottom: 20px; /* Tambahkan margin bawah */
-}
-
-
-p {
-    text-align: center;
-    font-size: 14px;
-    color: var(--secondary-text-color);
     margin-bottom: 20px;
 }
 
 label {
     font-size: 16px;
-    color: var(--text-color);
+    color: #333;
 }
 
 input, select, textarea {
-    width: 100%;
+    width: 100%;  /* Full width */
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
-    border: 1px solid var(--border-color);
+    border: 1px solid #ccc;
     font-size: 14px;
 }
 
@@ -79,11 +70,16 @@ button {
     color: white;
     border: none;
     cursor: pointer;
-    width: 100%;  /* Buat tombol mengambil seluruh lebar */
+    width: 100%;
     padding: 10px;
     font-size: 16px;
     border-radius: 5px;
 }
+
+button:hover {
+    background-color: #0056b3;
+}
+
 
 button:hover {
     background-color: #0056b3;

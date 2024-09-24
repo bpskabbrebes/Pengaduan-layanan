@@ -38,9 +38,9 @@ body {
 }
 
 h2 {
-    margin-top: 0; /* Atur agar tidak ada margin di atas judul */
-    padding-top: 20px; /* Sesuaikan padding untuk memberi jarak dari atas */
-    text-align: center; /* Untuk memastikan judul berada di tengah */
+    margin-top: 20px;  /* Beri jarak dari bagian atas halaman */
+    text-align: center;  /* Menempatkan judul di tengah */
+    font-size: 24px;
 }
 
 p {

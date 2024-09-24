@@ -38,10 +38,9 @@ body {
 }
 
 h2 {
-    text-align: left;
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 70px;
+    margin-top: 0; /* Atur agar tidak ada margin di atas judul */
+    padding-top: 20px; /* Sesuaikan padding untuk memberi jarak dari atas */
+    text-align: center; /* Untuk memastikan judul berada di tengah */
 }
 
 p {

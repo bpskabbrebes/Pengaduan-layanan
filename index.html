@@ -31,6 +31,41 @@
 
         <button type="submit">Submit</button>
     </form>
+    <p id="error-message" style="color: red;"></p>
+
+    <!-- Script JavaScript -->
+    <script>
+        document.getElementById("pengaduanForm").addEventListener("submit", function(e) {
+            e.preventDefault(); // Mencegah pengiriman form default
+
+            // Ambil nilai dari input field
+            var nama = document.getElementById("nama").value;
+            var email = document.getElementById("email").value;
+            var nomorHP = document.getElementById("nomor_hp").value;
+
+            // Pesan error jika ada field yang kosong
+            var errorMessage = "";
+
+            if (nama === "") {
+                errorMessage += "Nama harus diisi. ";
+            }
+            if (email === "") {
+                errorMessage += "Email harus diisi. ";
+            }
+            if (nomorHP === "") {
+                errorMessage += "Nomor HP harus diisi. ";
+            }
+
+            // Tampilkan pesan error jika ada
+            if (errorMessage !== "") {
+                document.getElementById("error-message").textContent = errorMessage;
+            } else {
+                alert("Form berhasil dikirim!");
+                // Jika ingin mengirim form, uncomment baris di bawah ini
+                // document.getElementById("pengaduanForm").submit();
+            }
+        });
+    </script>
 
     <script src="script.js"></script>
    

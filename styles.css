@@ -18,15 +18,32 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    height: 100vh;
+    font-family: Arial, sans-serif;
 }
+
+h2 {
+    margin-top: 20px;  /* Beri jarak dari bagian atas halaman */
+    text-align: center;  /* Menempatkan judul di tengah */
+    font-size: 24px;
+}
+
+form {
+    margin-top: 50px; /* Beri jarak antara judul dan form */
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
 
 .form-container {
     background-color: white;
@@ -37,11 +54,6 @@ body {
     max-width: 500px;  /* Batasi lebar maksimum */
 }
 
-h2 {
-    margin-top: 0; /* Atur agar tidak ada margin di atas judul */
-    padding-top: 20px; /* Sesuaikan padding untuk memberi jarak dari atas */
-    text-align: center; /* Untuk memastikan judul berada di tengah */
-}
 
 p {
     text-align: center;
@@ -62,17 +74,6 @@ input, select, textarea {
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 14px;
-}
-
-button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
 }
 
 button:hover {

@@ -4,70 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Pengaduan Layanan</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link ke file CSS -->
 </head>
 <body>
+    <!-- Judul yang ingin Anda pindahkan ke atas -->
     <h2>Form Pengaduan Layanan BPS Kabupaten Brebes</h2>
-    <p>                                                                  </p>
-
+    
+    <!-- Form Pengaduan -->
     <form id="pengaduanForm">
-        <label for="nama">Nama:</label><br>
-        <input type="text" id="nama" name="nama" required><br><br>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama"><br><br>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
 
-        <label for="nomorhp">Nomor HP:</label><br>
-        <input type="text" id="nomorhp" name="nomorhp" required><br><br>
+        <label for="nomor_hp">Nomor HP:</label>
+        <input type="text" id="nomor_hp" name="nomor_hp"><br><br>
 
-        <label for="jenis_pengaduan">Jenis Pengaduan:</label><br>
-        <select id="jenis_pengaduan" name="jenis_pengaduan" required>
-            <option value="Layanan PST">Layanan PST</option>
-            <option value="Layanan Lain">Layanan Lain</option>
+        <label for="jenis_pengaduan">Jenis Pengaduan:</label>
+        <select id="jenis_pengaduan" name="jenis_pengaduan">
+            <option>Layanan PST</option>
+            <option>Layanan Lain</option>
         </select><br><br>
 
-        <label for="isi_pengaduan">Isi Pengaduan:</label><br>
-        <textarea id="isi_pengaduan" name="isi_pengaduan" rows="4" cols="50" required></textarea><br><br>
+        <label for="isi_pengaduan">Isi Pengaduan:</label>
+        <textarea id="isi_pengaduan" name="isi_pengaduan"></textarea><br><br>
 
         <button type="submit">Submit</button>
     </form>
-    <p id="error-message" style="color: red;"></p>
 
-    <!-- Script JavaScript -->
-    <script>
-        document.getElementById("pengaduanForm").addEventListener("submit", function(e) {
-            e.preventDefault(); // Mencegah pengiriman form default
-
-            // Ambil nilai dari input field
-            var nama = document.getElementById("nama").value;
-            var email = document.getElementById("email").value;
-            var nomorHP = document.getElementById("nomor_hp").value;
-
-            // Pesan error jika ada field yang kosong
-            var errorMessage = "";
-
-            if (nama === "") {
-                errorMessage += "Nama harus diisi. ";
-            }
-            if (email === "") {
-                errorMessage += "Email harus diisi. ";
-            }
-            if (nomorHP === "") {
-                errorMessage += "Nomor HP harus diisi. ";
-            }
-
-            // Tampilkan pesan error jika ada
-            if (errorMessage !== "") {
-                document.getElementById("error-message").textContent = errorMessage;
-            } else {
-                alert("Form berhasil dikirim!");
-                // Jika ingin mengirim form, uncomment baris di bawah ini
-                // document.getElementById("pengaduanForm").submit();
-            }
-        });
-    </script>
-
-    <script src="script.js"></script>
-   
+    <script src="script.js"></script> <!-- Link ke file JavaScript -->
 </body>
 </html>

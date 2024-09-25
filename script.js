@@ -9,7 +9,7 @@ document.getElementById("pengaduanForm").addEventListener("submit", function(e) 
     let isiPengaduan = document.getElementById("isi_pengaduan").value;
 
     // URL Web App dari Google Apps Script Anda
-    let url = "https://script.google.com/macros/s/AKfycbw5X_0KkTZGUxJa-3kBoNF4fEHohZ6LK-ri68TtkTpcoEOQgJqzKCGwMLw6ae9lkZTc/exec";  // Ganti dengan URL Web App Anda
+    let url = "https://script.google.com/u/0/home/projects/1oZQuD3GXHRGsXLHzOrFfnmCr9q3ddEECVqELOJ7Q57B1gX6P8czssL9N/edit";  // Ganti dengan URL Web App Anda
 
     // Data yang akan dikirimkan
     let data = new URLSearchParams();

@@ -1,79 +1,78 @@
-/* Variabel untuk kustomisasi warna dan font */
-:root {
-    --primary-color: #007BFF;
-    --hover-color: #0056b3;
-    --background-color: #f4f4f4;
-    --form-background-color: white;
-    --text-color: #333;
-    --secondary-text-color: #666;
-    --border-color: #ccc;
-    --button-text-color: white;
-    --font-family: 'Arial', sans-serif;
-}
+/* styles.css */
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    font-family: var(--font-family);
-    background-color: var(--background-color);
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-
-.form-container {
-    background-color: var(--form-background-color);
+    min-height: 100vh;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
 }
 
-h2 {
+header h1 {
     text-align: center;
-    font-size: 24px;
-    color: var(--text-color);
-}
-
-p {
-    text-align: center;
-    font-size: 14px;
-    color: var(--secondary-text-color);
     margin-bottom: 20px;
 }
 
-label {
-    font-size: 16px;
-    color: var(--text-color);
+.form-group {
+    margin-bottom: 15px;
 }
 
-input, select, textarea {
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid var(--border-color);
-    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
 }
 
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: var(--primary-color);
-    color: var(--button-text-color);
+    background-color: #007BFF;
+    color: #fff;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    width: 100%;
+    font-size: 16px;
 }
 
 button:hover {
-    background-color: var(--hover-color);
+    background-color: #0056b3;
+}
+
+/* Media Query untuk tampilan mobile */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+    }
 }
